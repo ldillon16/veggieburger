@@ -1,0 +1,29 @@
+{
+  "name": "veggieburger",
+  "version": "1.0.0",
+  "description": "An interactive app that allows you to devour plant-based burgers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldillon16/veggieburger.git"
+  },
+  "keywords": [
+    "veggieburger"
+  ],
+  "author": "Lindsay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldillon16/veggieburger/issues"
+  },
+  "homepage": "https://github.com/ldillon16/veggieburger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0",
+    "npm": "^6.0.0"
+  }
+}
