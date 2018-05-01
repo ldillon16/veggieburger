@@ -6,26 +6,24 @@ var orm = require("../config/orm.js");
 // burger object to be exported
 var burger = {
 
-	selectAll: function() {
-
+	selectAll: function(cb) {
+		orm.selectAll("burgers", function(res) {
+			cb(res);
+		});
 	};
 
-	insertOne: function(a, b, c) {
-
+	insertOne: function(cols, vals, cb) {
+		orm.insertOne("burgers", cols, vals, function(res) {
+			cb(res);
+		});
 	};
 
 	updateOne: function(d, e,f) {
-
-	};
-}
-
-
-
-
-
-
-
-
+		orm.updateOne("burgers", objColVals, condition, function(res) {
+			cb(res);
+		});
+	}
+};
 
 // export burger object
 module.exports = burger;
