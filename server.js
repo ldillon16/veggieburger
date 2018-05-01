@@ -9,10 +9,10 @@ var app = express();
 app.use(express.static("public"));
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/JSON
-app.use(bodyParser.JSON());
+app.use(bodyParser.json());
 
 
 // setting handlebars
@@ -29,3 +29,5 @@ app.use(routes);
 app.listen(PORT, function() {
 	console.log("App now listening at localhost:" + PORT);
 });
+
+//middleware error?
