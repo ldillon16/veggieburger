@@ -5,8 +5,11 @@
   {{#each burgers}}
     {{#unless this.devoured}}
       <div>
-        <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-          <button type="submit" class="burgerToEat"> {{this.burger_name}}</button>
+
+        <form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
+        <input input type="hidden" type="text" name="devoured" value={{this.devoured}}></input>
+          <span class="burgerToEat"> {{this.burger_name}}</span>
+          <button type="submit" class="burgerToEat"> Devour it! </button>
         </form>
       </div>
     {{/unless}}
@@ -15,7 +18,7 @@
 
 <h2>Devoured Burgers</h2>
 <div>
-  {{#each burgerss}}
+  {{#each burgers}}
     {{#if this.devoured}}
       <div class = "burgerDevoured">
         <div>
