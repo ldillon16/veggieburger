@@ -1,24 +1,8 @@
 {
   "name": "veggieburger",
   "version": "1.0.0",
-  "description": "An interactive app that allows you to devour plant-based burgers",
+  "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ldillon16/veggieburger.git"
-  },
-  "keywords": [
-    "veggieburger"
-  ],
-  "author": "Lindsay",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ldillon16/veggieburger/issues"
-  },
-  "homepage": "https://github.com/ldillon16/veggieburger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
@@ -28,6 +12,27 @@
     "mysql": "^2.15.0",
     "npm": "^6.0.0",
     "path": "^0.12.7"
-    "handlebars-helper-css"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldillon16/veggieburger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldillon16/veggieburger/issues"
+  },
+  "homepage": "https://github.com/ldillon16/veggieburger#readme",
+    "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0"
   }
 }
