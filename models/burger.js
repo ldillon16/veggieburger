@@ -23,6 +23,7 @@ var burger = {
 			cb(res);
 		})
 	}
+
 };
 
 // export burger object

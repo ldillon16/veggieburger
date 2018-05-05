@@ -2,7 +2,7 @@
 
 <div class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6 burger-to-eat">
 
 <h2>Burgers to eat:</h2>
 
@@ -14,7 +14,7 @@
           <form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
           <input input type="hidden" type="text" name="devoured" value={{this.devoured}}></input>
             <span class="burgerToEat"> {{this.burger_name}}</span>
-            <button type="submit" class="burgerToEat"> Devour it! </button>
+            <button class= "active btn-warning" type="submit" class="burgerToEat"> Devour it! </button>
           </form>
         </div>
       {{/unless}}
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-6 devoured-box">
 <h2>Devoured Burgers:</h2>
   <div>
     {{#each burgers}}
@@ -41,12 +41,15 @@
 
 <h2>Add a Burger</h2>
 <div class="row">
+<div class="col-9">
 <form action="/burgers" method="POST" class="create-form">
 
     <label for="burg">Burger Name:</label>
     <input type="text" id="burg" name="burger_name">
 
 
-  <button type="submit">Add Burger</button>
+  <button class="active btn-success" type="submit">Add Burger</button>
 </form>
 </div>
+</div>
+

@@ -1,11 +1,25 @@
 html {
-	background: purple;
+	background: yellow;
 }
 
 body {
-	background: gray;
+	background: yellow;
+}
+
+h1 {
+	text-align: center;
+	color: ;
 }
 
 h2 {
-	color: pink;
+	color: red;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
