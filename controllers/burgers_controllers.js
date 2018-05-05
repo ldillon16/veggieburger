@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
 
 // post = create new burger
 router.post("/burgers", function(req, res) {
-	// console.log("burger name: " + burger_name)
+
 	// var condition
  	burger.insertOne([ 
  		"burger_name", 
